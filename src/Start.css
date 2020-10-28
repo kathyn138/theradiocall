@@ -1,0 +1,36 @@
+.start-text {
+    margin-top: 300px;
+    color: grey;
+}
+.deal-btn {
+    color: grey;
+    border: 1px solid rgba(128, 128, 128, 0.488);
+}
+.deal-btn:hover {
+    color: rgb(208, 1, 1);
+    border: 1px solid rgba(254, 3, 3, 0.488);
+}
+.l1 {
+    animation: fadeIn linear 4s;
+}
+.l2 {
+    animation: fadeIn ease-in 7s;
+}
+.l3 {
+    animation: fadeIn ease-in 11s;
+}
+.l4 {
+    animation: fadeIn ease-in 15s;
+}
+.deal-btn {
+    animation: fadeIn ease-in 19s;
+}
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
