@@ -1,6 +1,7 @@
 import React from 'react';
 import Deal from './Deal';
 import './Start.css';
+import alastorTune from './assets/alastortune.wav';
 
 class Start extends React.Component {
   constructor(props) {
@@ -11,11 +12,17 @@ class Start extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  componentDidMount() {
+    this.bgMusic = new Audio(alastorTune);
+    this.bgMusic.play();
+  }
+
   handleClick(evt) {
     evt.preventDefault();
     this.setState({
       deal: true
     });
+    this.bgMusic.pause();
   }
 
   render() {
