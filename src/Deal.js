@@ -9,11 +9,17 @@ class Deal extends React.Component {
     }
   }
 
+
   render() {
     return (
-      <div className="deal-txt">
-        "deal"
-      </div>
+      <React.Fragment>
+        <div className="cursor-cover">ok</div>
+        <div className="deal-text">
+          <h1>∰ ⊰ ⍕ ﹋</h1>
+          <h1>∰ ⊰ ⍕ ﹋</h1>
+          <h1>∰ ⊰ ⍕ ﹋</h1>
+        </div>
+      </React.Fragment>
     )
   }
 }
