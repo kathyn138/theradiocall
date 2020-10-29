@@ -23,6 +23,7 @@ class Start extends React.Component {
       deal: true
     });
     this.bgMusic.pause();
+    document.body.requestFullscreen();
   }
 
   render() {
