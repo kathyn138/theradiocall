@@ -1,18 +1,20 @@
 import React from 'react';
 import './Deal.css';
 import creepySfx from './assets/creepysfx.wav';
+import alastorGreet from './assets/alastorgreet.wav';
 
 class Deal extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  }
 
   componentDidMount() {
     this.creepySfx = new Audio(creepySfx);
     this.creepySfx.play();
+    this.alastorGreeting = new Audio(alastorGreet);
+
+    this.playAlastorGreeting = setTimeout(() => this.alastorGreeting.play(), 3500);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.playAlastorGreeting);
   }
 
 
