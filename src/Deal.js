@@ -1,5 +1,6 @@
 import React from 'react';
 import './Deal.css';
+import creepySfx from './assets/creepysfx.wav';
 
 class Deal extends React.Component {
   constructor(props) {
@@ -7,6 +8,11 @@ class Deal extends React.Component {
     this.state = {
 
     }
+  }
+
+  componentDidMount() {
+    this.creepySfx = new Audio(creepySfx);
+    this.creepySfx.play();
   }
 
 
