@@ -1,6 +1,10 @@
 import React from 'react';
 import Start from './Start';
+import ReactGA from 'react-ga';
 import './App.css';
+
+ReactGA.initialize('G-X39GNBV064');
+ReactGA.pageview('/homepage');
 
 class App extends React.Component {
   constructor(props) {
