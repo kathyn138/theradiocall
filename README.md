@@ -1,4 +1,7 @@
 # The Radio Call
 
-the radio demon sound from ost:
-https://youtu.be/9UUsR91Bp4c
+The Radio Call is a Hazbin Hotel summoning app for the character Alastor. I made it for Halloween.
+
+Warning: There is flashing colors and audio.
+
+The Radio Call is live on [Netlify](https://theradiocall.netlify.app/).
